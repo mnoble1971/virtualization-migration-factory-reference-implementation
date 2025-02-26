@@ -104,15 +104,17 @@ applications:
   #     path: components/vault-config-operator        
 
 
-# htpasswd creation
-  htpasswd-configuration:
+  reflector-operator:
     annotations:
       argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '1'
+      argocd.argoproj.io/sync-wave: '5'
     destination:
-      namespace: default
+      namespace: reflector-operator
     source:
-      path: components/htpasswd-configuration         
+      path: components/reflector-operator           
+
+
+  
            
 # # Lightspeed
  
