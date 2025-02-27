@@ -1,1 +1,4 @@
-oc apply -k ./ngin
+oc apply -k ./nginx
+
+crictl ps
+get into a pod:  crictl exec -it b3eb9e1462f52 -- /bin/sh
