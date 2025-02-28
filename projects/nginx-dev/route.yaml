@@ -1,0 +1,11 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: nginx-app
+  namespace: testdeploy
+spec:
+  to:
+    kind: Service
+    name: nginx-app
+  port:
+    targetPort: 80
