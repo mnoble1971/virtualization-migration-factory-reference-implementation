@@ -9,5 +9,6 @@ resources:
 
 configMapGenerator:
   - name: nginx-custom-page
+    namespace: testdeploy
     files:
       - index.html
