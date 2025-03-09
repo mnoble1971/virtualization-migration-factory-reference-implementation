@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   labels:
-    kubernetes.io/metadata.name: openshift-workload-availability
+    kubernetes.io/metadata.name: dynatrace
     openshift.io/cluster-monitoring: "true"
     argocd.argoproj.io/managed-by: openshift-gitops
-  name: openshift-workload-availability
+  name: dyantrace

@@ -1,0 +1,33 @@
+apiVersion: policy.open-cluster-management.io/v1beta1
+kind: OperatorPolicy
+metadata:
+  name: dynatrace-operator
+  namespace: dynatrace
+spec:
+  upgradeApproval: Automatic
+  complianceConfig:
+    catalogSourceUnhealthy: Compliant
+    deploymentsUnavailable: NonCompliant
+    upgradesAvailable: Compliant
+  complianceType: musthave
+  remediationAction: enforce
+  removalBehavior:
+    clusterServiceVersions: Delete
+    customResourceDefinitions: Keep
+    operatorGroups: DeleteIfUnused
+    subscriptions: Delete
+  severity: medium
+  operatorGroup: # optional
+    name: cluster-logging
+    namespace: openshift-logging
+    targetNamespaces:
+        - openshift-logging
+  subscription:
+    channel: alpha
+    name: dynatrace-operator
+    namespace: dynatrace
+    source: certified-operators
+    sourceNamespace: openshift-marketplace
+    startingCSV: dynatrace-operator.v1.4.1
+  versions: 
+    - dynatrace-operator.v1.4.1
