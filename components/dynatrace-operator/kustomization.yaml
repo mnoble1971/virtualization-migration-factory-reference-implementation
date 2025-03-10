@@ -5,4 +5,4 @@ namespace: dynatrace
 
 resources:
   - namespace.yaml
-  - operator-policy
+  - operator-policy.yaml
