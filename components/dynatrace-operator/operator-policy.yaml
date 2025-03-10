@@ -18,10 +18,10 @@ spec:
     subscriptions: Delete
   severity: medium
   operatorGroup: # optional
-    name: cluster-logging
-    namespace: openshift-logging
+    name: dynatrace-operator
+    namespace: dynatrace
     targetNamespaces:
-        - openshift-logging
+        - dyantrace
   subscription:
     channel: alpha
     name: dynatrace-operator
