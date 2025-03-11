@@ -6,4 +6,4 @@ namespace: dynatrace
 resources:
   - ./namespace.yaml
 #  - ./operator-policy.yaml
-  - ./operator
+  - ./operator.yaml
