@@ -20,8 +20,6 @@ spec:
   operatorGroup: # optional
     name: dynatrace-operator
     namespace: dynatrace
-    targetNamespaces:
-        - dyantrace
   subscription:
     channel: alpha
     name: dynatrace-operator
