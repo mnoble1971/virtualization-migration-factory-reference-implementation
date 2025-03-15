@@ -2,7 +2,7 @@ apiVersion: policy.open-cluster-management.io/v1beta1
 kind: OperatorPolicy
 metadata:
   name: dynatrace-operator
-  namespace: dynatrace
+  namespace: open-cluster-management-policies
 spec:
   upgradeApproval: Automatic
   complianceConfig:
