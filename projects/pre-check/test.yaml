@@ -1,0 +1,20 @@
+test1: test
+test2: test
+
+
+
+baremetalhosts:
+- name: hostname1
+  ip: 1.1.1.1
+  prefix_length: 23
+  mac_address: 00:00:00:00:01
+  role: master
+  management_ip: 0.0.0.20
+  serial: serial1234
+- name: hostname2
+  ip: 1.1.1.2
+  prefix_length: 23
+  mac_address: 00:00:00:00:02
+  role: master
+  management_ip: 0.0.0.21
+  serial: searial1234
