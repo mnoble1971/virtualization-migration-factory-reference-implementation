@@ -13,5 +13,5 @@ data:
   HUB_BASE_DOMAIN: '{{hub (lookup "v1" "ConfigMap" "acm-policies" "environment-variables").data.CLUSTER_BASE_DOMAIN hub}}'
   INFRA_GITOPS_REPO: '{{hub (lookup "v1" "ConfigMap" "acm-policies" "environment-variables").data.INFRA_GITOPS_REPO hub}}'
   #DATA_CENTER: '{{ hub (lookup "v1" "ConfigMap" "acm-policies" "environment-variables").data.CLUSTER_NAME | slice(0,3) | map({"ope": "ct_datacenter", "NNA": "ny_datacenter"}).get(hub) hub }}'
-  HUB_BASE_DOMAIN_NEW: '{{hub (lookup "v1" "ConfigMap" "acm-policies" "environment-variables").data.CLUSTER_BASE_DOMAIN hub}}'
-  NEW_ONE: '{{hub (lookup "v1" "ConfigMap" "acm-policies" "environment-variables").data.NEW hub}}'
+  #HUB_BASE_DOMAIN_NEW: '{{hub (lookup "v1" "ConfigMap" "acm-policies" "environment-variables").data.CLUSTER_BASE_DOMAIN hub}}'
+  #NEW_ONE: '{{hub (lookup "v1" "ConfigMap" "acm-policies" "environment-variables").data.NEW hub}}'
