@@ -495,7 +495,7 @@ spec:
         envFrom:
         - configMapRef:
             name: environment-variables
-        image: quay.io/raffaelespazzoli/raffa-envsub:1.1
+        image: quay.io/raffaelespazzoli/raffa-envsub:latest
         imagePullPolicy: Always
         securityContext:
           runAsNonRoot: true
@@ -620,4 +620,4 @@ data:
           # all created clusters base domain should be <cluster-name>.<PLATFORM_BASE_DOMAIN> 
   PLATFORM_BASE_DOMAIN: '${platform_base_domain}'
   HUB_BASE_DOMAIN: '${cluster_base_domain}'
-  INFRA_GITOPS_REPO: '${gitops_repo}'
+  INFRA_GITOPS_REPO: https://github.com/mnoble1971/virtualization-migration-factory-reference-implementation.git 
