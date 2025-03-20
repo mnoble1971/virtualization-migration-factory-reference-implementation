@@ -621,5 +621,3 @@ data:
   PLATFORM_BASE_DOMAIN: '${platform_base_domain}'
   HUB_BASE_DOMAIN: '${cluster_base_domain}'
   INFRA_GITOPS_REPO: '${gitops_repo}'
-  NEW: '${cluster_name}' 
-  CLUSTER_PREFIX: '${cluster_name:0:3}'
