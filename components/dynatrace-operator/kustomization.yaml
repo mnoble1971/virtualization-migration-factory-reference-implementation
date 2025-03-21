@@ -13,4 +13,4 @@ helmCharts:
   - name: dynatrace-operator
     namespace: dynatrace
     releaseName: dynatrace-operator
-    repo: oci://public.ecr.aws/dynatrace/dynatrace-operator  
+    repo: oci://public.ecr.aws/dynatrace 
