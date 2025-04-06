@@ -22,7 +22,6 @@ projects:
 applications: 
 
 # Basic
-
   web-terminal-operator:
     annotations:
       argocd.argoproj.io/compare-options: IgnoreExtraneous
@@ -32,10 +31,17 @@ applications:
     source:
       path: components/web-terminal-operator 
 
-
+# htpasswd
+  htpasswd-configuration:
+    annotations:
+      argocd.argoproj.io/compare-options: IgnoreExtraneous
+      argocd.argoproj.io/sync-wave: '6'
+    destination:
+      namespace: openshift-config
+    source:
+      path: components/htpasswd-configuration 
 
 # Observability
-
   kube-ops-view:
     annotations:
       argocd.argoproj.io/compare-options: IgnoreExtraneous
@@ -103,7 +109,7 @@ applications:
     source:
       path: components/vault-config-operator        
 
-
+# Reflector
   reflector-operator:
     annotations:
       argocd.argoproj.io/compare-options: IgnoreExtraneous
