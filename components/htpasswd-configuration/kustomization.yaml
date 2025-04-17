@@ -4,4 +4,5 @@ kind: Kustomization
 namespace: openshift-config
 
 resources:
-- ./secret.yaml
+- ./oauth.yaml
+- ./user.yaml
