@@ -14,7 +14,7 @@ helmCharts:
     namespace: dynatrace
     releaseName: dynatrace-operator
     repo: oci://public.ecr.aws/dynatrace
-    version: 1.42.2
+    version: 1.4.2
     valuesInline:
       platform: openshift
       installCRD: true
