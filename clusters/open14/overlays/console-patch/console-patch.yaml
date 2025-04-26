@@ -8,4 +8,4 @@ spec:
   plugins:
   #- logging-view-plugin
   #- lightspeed-console-plugin
-  - kubevirt-plugin
+  #- kubevirt-plugin
