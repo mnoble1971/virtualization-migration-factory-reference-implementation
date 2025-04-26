@@ -21,15 +21,15 @@ projects:
 
 applications: 
 
-# Basic
-  web-terminal-operator:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '5'
-    destination:
-      namespace: openshift-operators
-    source:
-      path: components/web-terminal-operator 
+# # Basic
+#   web-terminal-operator:
+#     annotations:
+#       argocd.argoproj.io/compare-options: IgnoreExtraneous
+#       argocd.argoproj.io/sync-wave: '5'
+#     destination:
+#       namespace: openshift-operators
+#     source:
+#       path: components/web-terminal-operator 
 
 # htpasswd
   htpasswd-configuration:
@@ -89,15 +89,15 @@ applications:
 #     source:
 #       path: components/lvm-configuration   
 
-# # external secrets manager
-#   external-secrets-operator:
-#     annotations:
-#       argocd.argoproj.io/compare-options: IgnoreExtraneous
-#       argocd.argoproj.io/sync-wave: '5'
-#     destination:
-#       namespace: external-secrets-operator
-#     source:
-#       path: components/external-secrets-operator           
+# external secrets manager
+  external-secrets-operator:
+    annotations:
+      argocd.argoproj.io/compare-options: IgnoreExtraneous
+      argocd.argoproj.io/sync-wave: '5'
+    destination:
+      namespace: external-secrets-operator
+    source:
+      path: components/external-secrets-operator           
 
 # vault config operator
   vault-config-operator:
