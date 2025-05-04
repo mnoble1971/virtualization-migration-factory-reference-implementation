@@ -1,0 +1,10 @@
+apiVersion: console.openshift.io/v1
+kind: ConsoleLink
+metadata:
+  name: my-machine-config-link
+spec:
+  href: 'https://console-openshift-console.apps.open14.localhost.com/k8s/cluster/machineconfiguration.openshift.io~v1~MachineConfig'
+  location: ApplicationMenu
+  text: 'Machine-confiigs-shortcut'
+  applicationMenu:
+    section: 'Compute'
