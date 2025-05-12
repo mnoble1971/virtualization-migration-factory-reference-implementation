@@ -120,13 +120,13 @@ applications:
       path: components/reflector-operator           
 
   # dynatrace-operator:
-  #   annotations:
-  #     argocd.argoproj.io/compare-options: IgnoreExtraneous
-  #     argocd.argoproj.io/sync-wave: '5'
-  #   destination:
-  #     namespace: dynatrace
-  #   source:
-  #     path: components/dynatrace-operator           
+    annotations:
+      argocd.argoproj.io/compare-options: IgnoreExtraneous
+      argocd.argoproj.io/sync-wave: '5'
+    destination:
+      namespace: dynatrace
+    source:
+      path: components/dynatrace-operator           
   
            
 # # Lightspeed
