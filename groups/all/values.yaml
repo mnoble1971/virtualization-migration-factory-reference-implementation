@@ -22,14 +22,14 @@ projects:
 applications: 
 
 # Basic
-  web-terminal-operator:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '5'
-    destination:
-      namespace: openshift-operators
-    source:
-      path: components/web-terminal-operator 
+  # web-terminal-operator:
+  #   annotations:
+  #     argocd.argoproj.io/compare-options: IgnoreExtraneous
+  #     argocd.argoproj.io/sync-wave: '5'
+  #   destination:
+  #     namespace: openshift-operators
+  #   source:
+  #     path: components/web-terminal-operator 
 
 # htpasswd
   htpasswd-configuration:
