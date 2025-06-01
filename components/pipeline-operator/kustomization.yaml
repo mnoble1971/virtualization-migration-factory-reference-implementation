@@ -4,3 +4,4 @@ namespace: pipeline-operator
 
 resources:
   - ./namespace.yaml
+  - ./operator.yaml
