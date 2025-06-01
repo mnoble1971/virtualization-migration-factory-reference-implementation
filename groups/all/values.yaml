@@ -126,8 +126,16 @@ applications:
     destination:
       namespace: dynatrace
     source:
-      path: components/dynatrace-operator           
-  
+      path: components/dynatrace-operator     
+
+  pipeline-operator:
+    annotations:
+      argocd.argoproj.io/compare-options: IgnoreExtraneous
+      argocd.argoproj.io/sync-wave: '5'
+    destination:
+      namespace: pipeline-operator
+    source:
+      path: components/pipeline-operator
            
 # # Lightspeed
  
