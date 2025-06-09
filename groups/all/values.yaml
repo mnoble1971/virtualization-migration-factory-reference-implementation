@@ -128,14 +128,14 @@ applications:
     source:
       path: components/dynatrace-operator  
 
-  skupper-operator:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '5'
-    destination:
-      namespace: skupper-operator
-    source:
-      path: components/skupper-operator
+  # skupper-operator:
+  #   annotations:
+  #     argocd.argoproj.io/compare-options: IgnoreExtraneous
+  #     argocd.argoproj.io/sync-wave: '5'
+  #   destination:
+  #     namespace: skupper-operator
+  #   source:
+  #     path: components/skupper-operator
 
   # pipelines-operator:
   #   annotations:
