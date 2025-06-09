@@ -14,7 +14,7 @@ metadata:
 spec:
   channel: stable
   startingCSV: 18.5-rh-2
-  name: 
+  name: skupper-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
   installPlanApproval: Automatic
