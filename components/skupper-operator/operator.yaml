@@ -13,7 +13,7 @@ metadata:
   namespace: skupper-operator
 spec:
   channel: stable
-  startingCSV: skupper-operator.1.8.5-rh-2
+  startingCSV: skupper-operator.v1.8.5-rh-2
   name: skupper-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
