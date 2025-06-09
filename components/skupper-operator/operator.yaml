@@ -1,4 +1,4 @@
-apiVersion: operators.coreos.com/v1
+apiVersion: operators.operatorframework.io/v1alpha1
 kind: OperatorGroup
 metadata:
   name:  skupper-operator-group
@@ -6,7 +6,7 @@ metadata:
 spec:
   targetNamespaces: []
 ---
-apiVersion: operators.coreos.com/v1alpha1
+apiVersion: operators.operatorframework.io/v1alpha1
 kind: Subscription
 metadata:
   name: skupper-operator
