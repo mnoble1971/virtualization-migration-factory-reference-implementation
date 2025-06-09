@@ -13,8 +13,7 @@ metadata:
   name: openshift-pipelines-operator
   namespace: pipelines-operator
 spec:
-  channel: latest
-  version: 1.18.0
+  channel: pipelines-1.18
   name: openshift-pipelines-operator-rh
   source: redhat-operators
   sourceNamespace: openshift-marketplace
