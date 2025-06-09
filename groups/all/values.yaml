@@ -128,14 +128,14 @@ applications:
     source:
       path: components/dynatrace-operator     
 
-  pipelines-operator:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '5'
-    destination:
-      namespace: pipelines-operator
-    source:
-      path: components/pipelines-operator
+  # pipelines-operator:
+  #   annotations:
+  #     argocd.argoproj.io/compare-options: IgnoreExtraneous
+  #     argocd.argoproj.io/sync-wave: '5'
+  #   destination:
+  #     namespace: pipelines-operator
+  #   source:
+  #     path: components/pipelines-operator
            
 # # Lightspeed
  
