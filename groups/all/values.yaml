@@ -135,7 +135,7 @@ applications:
     destination:
       namespace: pipelines-operator
     source:
-      path: components/pipeline-operator
+      path: components/pipelines-operator
            
 # # Lightspeed
  
