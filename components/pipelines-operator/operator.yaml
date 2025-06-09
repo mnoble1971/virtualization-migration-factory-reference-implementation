@@ -4,8 +4,7 @@ metadata:
   name:  pipelines-operator-group
   namespace: pipelines-operator
 spec:
-  targetNamespaces:
-  -  pipelines-operator
+  targetNamespaces: {}
 ---
 apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
