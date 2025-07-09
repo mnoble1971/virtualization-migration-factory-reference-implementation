@@ -1,0 +1,4 @@
+apiVersion: v2
+name: nginx-openshift
+description: Simple NGINX Helm chart for OpenShift
+version: 0.1.0

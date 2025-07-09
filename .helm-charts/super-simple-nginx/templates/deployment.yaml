@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.appName }}
   labels:
     app: {{ .Values.appName }}
-  namespace: default
+  namespace: test-app
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:

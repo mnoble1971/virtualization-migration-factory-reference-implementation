@@ -3,7 +3,7 @@ kind: Kustomization
 
 resources:
   - ../../groups/all
- # - ../../groups/all
+  - ../../groups/all
   #- ../../groups/prod
   # - ../../components/kube-ops-view
   # - ../../components/nmstate-configuration
