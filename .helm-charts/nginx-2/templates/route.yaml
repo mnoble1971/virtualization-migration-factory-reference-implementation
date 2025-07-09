@@ -8,7 +8,7 @@ spec:
     kind: Service
     name: {{ include "nginx-openshift.fullname" . }}
   port:
-    targetPort: 80
+    targetPort: 8080
   {{- if .Values.route.host }}
   host: {{ .Values.route.host }}
   {{- end }}

@@ -24,11 +24,6 @@ spec:
           volumeMounts:
             - name: nginx-cache
               mountPath: /var/cache/nginx
-            - name: nginx-config
-              mountPath: /etc/nginx/conf.d
       volumes:
         - name: nginx-cache
           emptyDir: {}
-        - name: nginx-config
-          configMap:
-            name: {{ include "nginx-openshift.fullname" . }}-config
