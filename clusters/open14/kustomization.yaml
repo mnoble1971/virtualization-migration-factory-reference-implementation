@@ -5,7 +5,7 @@ resources:
   - ../../groups/all
  # - ../../groups/all
   #- ../../groups/prod
-  # - ../../components/kube-ops-view
+  - ../../components/goldpinger
   # - ../../components/nmstate-configuration
   # - ../../components/test
   # - ../../components/lightspeed

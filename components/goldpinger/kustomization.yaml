@@ -1,15 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-
+resources: []
+ 
+helmGlobals:
+  chartHome: ../../../../.helm-charts
 helmCharts:
   - name: goldpinger
-    repo: https://bloomberg.github.io/goldpinger
-    version: 6.2.0
     releaseName: goldpinger
     namespace: goldpinger
-    valuesInline:
-      service:
-        type: ClusterIP
-
-resources:
-  - namespace.yaml
+    valuesFile: []
