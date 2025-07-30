@@ -3,7 +3,7 @@ kind: Kustomization
 resources: []
  
 helmGlobals:
-  chartHome: ../../../../.helm-charts
+  chartHome: ../../.helm-charts
 helmCharts:
   - name: goldpinger
     releaseName: goldpinger
