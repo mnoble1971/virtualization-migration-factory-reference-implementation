@@ -8,4 +8,3 @@ helmCharts:
   - name: goldpinger
     releaseName: goldpinger
     namespace: goldpinger
-    valuesFile: []
