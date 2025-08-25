@@ -7,4 +7,4 @@ helmGlobals:
 helmCharts:
   - name: goldpinger
     releaseName: goldpinger
-    namespace: goldpinger
+    namespace: default
