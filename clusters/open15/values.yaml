@@ -1,0 +1,15 @@
+      
+projects: {}
+
+applications:  
+
+# console plugins
+
+  console-plugin:
+    annotations:
+      argocd.argoproj.io/compare-options: IgnoreExtraneous
+      argocd.argoproj.io/sync-wave: '5'
+    source:
+      path: clusters/open14/overlays/console-patch
+
+# Storage

@@ -51,33 +51,33 @@ applications:
     source:
       path: components/kube-ops-view 
 
-# Network 
-  nmstate-operator:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '5'
-    destination:
-      namespace: openshift-nmstate
-    source:
-      path: components/nmstate-operator 
+# # Network 
+#   nmstate-operator:
+#     annotations:
+#       argocd.argoproj.io/compare-options: IgnoreExtraneous
+#       argocd.argoproj.io/sync-wave: '5'
+#     destination:
+#       namespace: openshift-nmstate
+#     source:
+#       path: components/nmstate-operator 
 
-  nmstate-instance:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '6'
-    destination:
-      namespace: openshift-nmstate
-    source:
-      path: components/nmstate-instance
+#   nmstate-instance:
+#     annotations:
+#       argocd.argoproj.io/compare-options: IgnoreExtraneous
+#       argocd.argoproj.io/sync-wave: '6'
+#     destination:
+#       namespace: openshift-nmstate
+#     source:
+#       path: components/nmstate-instance
 
-  nmstate-configuration:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '7'
-    destination:
-      namespace: openshift-nmstate
-    source:
-      path: components/nmstate-configuration            
+#   nmstate-configuration:
+#     annotations:
+#       argocd.argoproj.io/compare-options: IgnoreExtraneous
+#       argocd.argoproj.io/sync-wave: '7'
+#     destination:
+#       namespace: openshift-nmstate
+#     source:
+#       path: components/nmstate-configuration            
 
 # # LVM configuration
 #   lvm-configuration:
@@ -89,35 +89,35 @@ applications:
 #     source:
 #       path: components/lvm-configuration   
 
-# external secrets manager
-  external-secrets-operator:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '5'
-    destination:
-      namespace: external-secrets-operator
-    source:
-      path: components/external-secrets-operator           
+# # external secrets manager
+#   external-secrets-operator:
+#     annotations:
+#       argocd.argoproj.io/compare-options: IgnoreExtraneous
+#       argocd.argoproj.io/sync-wave: '5'
+#     destination:
+#       namespace: external-secrets-operator
+#     source:
+#     path: components/external-secrets-operator           
 
-# vault config operator
-  vault-config-operator:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '6'
-    destination:
-      namespace: vault-config-operator
-    source:
-      path: components/vault-config-operator        
+# # vault config operator
+#   vault-config-operator:
+#     annotations:
+#       argocd.argoproj.io/compare-options: IgnoreExtraneous
+#       argocd.argoproj.io/sync-wave: '6'
+#     destination:
+#       namespace: vault-config-operator
+#     source:
+#       path: components/vault-config-operator        
 
-# Reflector
-  reflector-operator:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '5'
-    destination:
-      namespace: reflector-operator
-    source:
-      path: components/reflector-operator           
+# # Reflector
+#   reflector-operator:
+#     annotations:
+#       argocd.argoproj.io/compare-options: IgnoreExtraneous
+#       argocd.argoproj.io/sync-wave: '5'
+#     destination:
+#       namespace: reflector-operator
+#     source:
+#       path: components/reflector-operator           
 
   # dynatrace-operator:
   #   annotations:
@@ -128,14 +128,14 @@ applications:
   #   source:
   #     path: components/dynatrace-operator  
 
-  servicemesh-operator:
-    annotations:
-      argocd.argoproj.io/compare-options: IgnoreExtraneous
-      argocd.argoproj.io/sync-wave: '5'
-    destination:
-      namespace: servicemesh-operator
-    source:
-      path: components/servicemesh-operator
+  # servicemesh-operator:
+  #   annotations:
+  #     argocd.argoproj.io/compare-options: IgnoreExtraneous
+  #     argocd.argoproj.io/sync-wave: '5'
+  #   destination:
+  #     namespace: servicemesh-operator
+  #   source:
+  #     path: components/servicemesh-operator
 
   # skupper-operator:
   #   annotations:
