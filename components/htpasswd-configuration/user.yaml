@@ -11,3 +11,7 @@ subjects:
   - kind: User
     name: open-admin
     apiGroup: rbac.authorization.k8s.io
+  - kind: User
+    name: open-admin2
+    apiGroup: rbac.authorization.k8s.io
+    
