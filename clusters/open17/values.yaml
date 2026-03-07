@@ -1,0 +1,89 @@
+      
+projects: {}
+
+applications: 
+
+  openshift-config:
+    annotations:
+      argocd.argoproj.io/sync-wave: '16'      
+    source:
+      path: clusters/etl4/overlays/openshift-config
+
+# Networking
+
+  nmstate-configuration:
+    annotations:
+      argocd.argoproj.io/sync-wave: '15'
+    source:
+      path: clusters/etl4/overlays/nmstate-configuration
+
+  metallb-configuration:
+    annotations:
+      argocd.argoproj.io/sync-wave: '6'
+    destination:
+      namespace: metallb-system
+    source:
+      path: clusters/etl4/overlays/metallb-configuration      
+
+# Storage
+
+  trident-configuration:
+    annotations:
+      argocd.argoproj.io/sync-wave: '6'
+    destination:
+      namespace: netapp-trident
+    source:
+      path: clusters/etl4/overlays/trident-configuration          
+
+
+# VDI
+
+  vault:
+    annotations:
+      argocd.argoproj.io/sync-wave: '15'
+    destination:
+      namespace: vault      
+    source:
+      path: clusters/etl4/overlays/vault
+    extraFields: |
+      ignoreDifferences:
+        - group: 'apps'
+          jsonPointers:
+            - /spec/volumeClaimTemplates
+          kind: StatefulSet      
+
+  # guacamole:
+  #   annotations:
+  #     argocd.argoproj.io/sync-wave: '15'
+  #   destination:
+  #     namespace: guacamole      
+  #   source:
+  #     path: clusters/etl4/overlays/guacamole
+
+  # rhsso-operator:
+  #   annotations:
+  #     argocd.argoproj.io/sync-wave: '5'     
+  #   source:
+  #     path: clusters/etl4/overlays/rhsso-operator  
+
+  # rhsso-configuration:
+  #   annotations:
+  #     argocd.argoproj.io/sync-wave: '15'     
+  #   source:
+  #     path: clusters/etl4/overlays/rhsso-configuration                       
+
+  test-udn:
+    annotations:
+      argocd.argoproj.io/compare-options: IgnoreExtraneous
+      argocd.argoproj.io/sync-wave: '25'
+    source:
+      path: clusters/etl4/overlays/test-udn    
+
+  # bookinfo-udn:
+  #   annotations:
+  #     argocd.argoproj.io/compare-options: IgnoreExtraneous
+  #     argocd.argoproj.io/sync-wave: '25'
+  #   destination:
+  #     namespace: bookinfo-udn
+  #   source:
+  #     path: clusters/etl4/overlays/bookinfo-udn
