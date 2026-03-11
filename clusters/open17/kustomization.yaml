@@ -12,3 +12,8 @@ helmGlobals:
 #   valuesFile: values.yaml
 #  namespace: openshift-gitops
 
+helmCharts:
+- name: nginx
+  valuesFile: values.yaml
+  namespace: nginx
+
