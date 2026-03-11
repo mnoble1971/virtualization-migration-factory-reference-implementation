@@ -36,3 +36,13 @@ applications:
       namespace: kube-ops-view
     source:
       path: components/kube-ops-view 
+
+# htpasswd
+
+  htpasswd-configuration:
+    annotations:
+      argocd.argoproj.io/sync-wave: '5'
+    destination:
+      namespace: openshift-config
+    source:
+      path: components/htpasswd-configuration
