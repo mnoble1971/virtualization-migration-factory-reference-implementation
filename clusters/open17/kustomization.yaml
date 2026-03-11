@@ -7,13 +7,13 @@ resources:
 helmGlobals:
   chartHome: ../../.helm-charts
 
-# helmCharts:
-# - name: argocd-app-of-app
-#   valuesFile: values.yaml
-#  namespace: openshift-gitops
-
 helmCharts:
-- name: nginx
-#  valuesFile: values.yaml
-  namespace: nginx
+- name: argocd-app-of-app
+  valuesFile: values.yaml
+ namespace: openshift-gitops
+
+# helmCharts:
+# - name: nginx
+# #  valuesFile: values.yaml
+#  namespace: nginx
 
