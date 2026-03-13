@@ -6,4 +6,5 @@ helmGlobals:
 
 helmCharts:
 - name: nginx
+  releaseName: nginx-test
   namespace: nginx
