@@ -2,7 +2,7 @@ projects: {}
 
 applications: 
 
-  openshift-config:
+  nginx:
     annotations:
       argocd.argoproj.io/sync-wave: '10'      
     source:
