@@ -10,7 +10,7 @@ helmGlobals:
 helmCharts:
 - name: argocd-app-of-app
   valuesFile: values.yaml
- namespace: openshift-gitops
+  namespace: openshift-gitops
 
 # helmCharts:
 # - name: nginx
