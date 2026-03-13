@@ -6,4 +6,4 @@ applications:
     annotations:
       argocd.argoproj.io/sync-wave: '10'      
     source:
-      path: clusters/etl6open17/overlays/nginx
+      path: clusters/open17/overlays/nginx
