@@ -6,5 +6,4 @@ helmGlobals:
 
 helmCharts:
 - name: nginx
-#  valuesFile: values.yaml
- namespace: nginx
+  namespace: nginx
