@@ -46,3 +46,19 @@ applications:
       namespace: openshift-config
     source:
       path: components/htpasswd-configuration
+
+# network
+
+    nmstate-operator:
+    annotations:
+      argocd.argoproj.io/sync-wave: '5'
+    source:
+      path: components/nmstate-operator 
+
+  nmstate-instance:
+    annotations:
+      argocd.argoproj.io/sync-wave: '6'
+    destination:
+      namespace: openshift-nmstate
+    source:
+      path: components/nmstate-instance
