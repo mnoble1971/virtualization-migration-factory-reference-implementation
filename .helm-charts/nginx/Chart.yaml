@@ -2,5 +2,5 @@ apiVersion: v2
 name: my-helm-demo
 description: super simple demo chart
 type: application
-version: 0.1.2
+version: 0.1.3
 appVersion: "1.25"
