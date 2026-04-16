@@ -28,6 +28,17 @@ spec:
           image: "{{ .Values.image.repo }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: {{ .Values.service.port }}
+          env:
+            - name: USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.security.secret }}
+                  key: {{ .Values.security.username }}
+            - name: PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.security.secret }}
+                  key: {{ .Values.security.password }}
           resources:
 {{- toYaml .Values.resources | nindent 12 }}
           volumeMounts:

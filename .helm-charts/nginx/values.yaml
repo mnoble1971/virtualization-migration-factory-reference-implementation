@@ -11,3 +11,7 @@ resources:
   limits:
     cpu: 200m
     memory: 128Mi
+security:
+  secret: my-secret
+  username: username
+  password: password
