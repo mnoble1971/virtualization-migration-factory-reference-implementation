@@ -8,7 +8,7 @@ applications:
     source:
       path: clusters/open17/overlays/nginx
 
-  nants:
+  nats:
     annotations:
       argocd.argoproj.io/sync-wave: '10'      
     source:
