@@ -8,8 +8,8 @@ applications:
     source:
       path: clusters/open17/overlays/nginx
 
-  # nats:
-  #   annotations:
-  #     argocd.argoproj.io/sync-wave: '10'      
-  #   source:
-  #     path: clusters/open17/overlays/nats
+  nats:
+    annotations:
+      argocd.argoproj.io/sync-wave: '10'      
+    source:
+      path: clusters/open17/overlays/nats
