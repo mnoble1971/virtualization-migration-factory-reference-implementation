@@ -8,3 +8,7 @@ helmCharts:
 - name: nginx
   releaseName: nginx-test
   namespace: nginx
+
+- name: nats
+  releaseName: nats-test
+  namespace: nats-test
